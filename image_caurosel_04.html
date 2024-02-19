@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carousel in BS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">   
+</head>
+<body>
+    <div class="container my-2">
+        <h2 class="text-info">Welcome to the caurosel</h2>
+        <p class="h6 text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, nulla.
+           Veritatis cumque consequuntur ex! Nam tempora, eum molestiae sapiente doloribus 
+           aliquam in quaerat corporis ut?</p>
+           <hr>
+        <!--slide with img,captions,controls and indicators-->
+       <div id="mycarouselIdName" class="carousel slide carousel-fade" data-ride="carousel">
+        <!--indicators with intervel-->
+        <ol class="carousel-indicators">
+            <li data-target="#mycarouselIdName" data-slide-to="0" class="active"></li>
+            <li data-target="#mycarouselIdName" data-slide-to="1"></li>
+            <li data-target="#mycarouselIdName" data-slide-to="2"></li>
+            <li data-target="#mycarouselIdName" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-interval="2800">
+                <img src="https://th.bing.com/th/id/OIP.MM0ZAydmf-VNOgQvFZJTvAHaFj?w=244&h=183&c=7&r=0&o=5&pid=1.7" alt="slide1" class="d-block w-100" style="height:500px;">
+                <div class="carousel-caption my-5 d-block">
+                    <h4>This is First Slide</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, atque consequatur, eligendi iure fuga et tempore omnis magnam voluptates asperiores doloremque provident, possimus animi suscipit?</p>
+                    <a href="#" class="btn btn-primary text-center text-white">Slide now</a>
+                </div>
+            </div>
+            <div class="carousel-item" data-interval="2800">
+                <img src="https://th.bing.com/th/id/R.80a432c4cba6b6c8acc80f1b0b7938be?rik=4zqx42%2fE0dm%2fJQ&riu=http%3a%2f%2fcdnimg.expatfinder.com%2fimages_html%2fWriters_and_Authors.jpg&ehk=56NhUwmd8gjAIseL5kJZGN5Uf4LMewq4RLhu%2f7rsHUI%3d&risl=&pid=ImgRaw&r=0" style="height:500px;" alt="slide2" class="d-block w-100">
+                <div class="carousel-caption my-5 d-block">
+                    <h4>This is First Slide</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, atque consequatur, eligendi iure fuga et tempore omnis magnam voluptates asperiores doloremque provident, possimus animi suscipit?</p>
+                    <a href="#" class="btn btn-primary text-center text-white">Slide now</a>
+                </div>
+            </div>
+            <div class="carousel-item" data-interval="2800">
+                <img src="https://th.bing.com/th/id/OIP.B8aQ820SOcr3aA1epBXshQHaE9?pid=ImgDet&w=183&h=123&c=7" alt="slide3" class="d-block w-100" style="height:500px;">
+                <div class="carousel-caption my-5 d-block">
+                    <h4>This is First Slide</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, atque consequatur, eligendi iure fuga et tempore omnis magnam voluptates asperiores doloremque provident, possimus animi suscipit?</p>
+                    <a href="#" class="btn btn-primary text-center text-white">Slide now</a>
+                </div>
+            </div>
+            <div class="carousel-item" data-interval="2800">
+                <img src="https://th.bing.com/th/id/OIP.1XvTa6FacYHU_4w-Cgqh3gAAAA?pid=ImgDet&w=300&h=200&rs=1" alt="" class="d-block w-100" style="height:500px;">
+                <div class="carousel-caption my-5 d-block">
+                    <h4>This is First Slide</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, atque consequatur, eligendi iure fuga et tempore omnis magnam voluptates asperiores doloremque provident, possimus animi suscipit?</p>
+                    <a href="#" class="btn btn-primary text-center text-white">Slide now</a>
+                </div>
+            </div>
+        </div>
+        <!--with controls-->
+        <!--previous control-->
+       <button type="button" class="carousel-control-prev" data-target="#mycarouselIdName" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="sr-only"><!--only for screen readers-->
+            previous
+        </span>
+       </button>
+       <!--next control-->
+       <button type="button" class="carousel-control-next" data-target="#mycarouselIdName" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="sr-only">
+            next
+        </span>
+       </button>
+       </div>
+
+
+
+
+
+
+
+    </div>     
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  </body>
+
+</html>

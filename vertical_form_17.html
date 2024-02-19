@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms(vertical) in BS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">   
+</head>
+<body>
+ <div class="jumbotron bg-warning">
+    <h3 class="text-info">Welcome to Vertical Form</h3>
+    <div class="card card-body text-muted">
+        <p class="h6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis sunt doloremque possimus quod!</p>
+    </div>
+</div>
+       <!--form-->
+    <div class="container my-2">
+        <h4 class="text-primary text-center">Contact Form In vertical</h4>
+        <div class="row my-2" >
+            <div class="col-md-6" ><!-- offset-md-4 or mx-auto(center)-->
+                <div class="card">
+                    <div class="card-body">
+                         <h6 class="text-center text-danger">Register Form</h6>
+                         <form action="" method="POST">
+                    <!--name[text],email[email],mobile[number],password[password],gender[radio],agree[checkbox],source[source],message[textarea],range[range], file[file]button[submit]-->
+                         <!--name-->
+                         <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" class="form-control">
+                         </div>
+                        <!--end name-->
+                        <!--number-->
+                        <div class="form-group">
+                            <label for="phone">Mobile Number</label>
+                            <input type="number" id="phone" class="form-control">
+                        </div>
+                        <!--end number-->
+                        <!--email-->
+                        <div class="form-group">
+                             <label for="emails">Email</label>
+                             <input type="email" id="emails" class="form-control">
+                        </div>
+                        <!--end email-->
+                        <!--password-->
+                        <div class="form-group">
+                             <label for="passs">Password</label>
+                             <input type="password" id="passs" class="form-control">
+                             <small class="form-text text-muted small">password must contain 8 characters,atlest one number and a symbol.</small>
+                        </div>
+                       <!--end password-->
+                       <!--select-->
+                       <div class="form-group">
+                             <label for="selects">Select Courses</label>
+                             <select name="" id="selects" class="form-control">
+                                <option value="" selected>Choose..</option>
+                                <option value="">HTML</option>
+                                <option value="">CSS</option>
+                                <option value="">BOOTSTRAP</option>
+                                <option value="">JAVASCRIPT</option>
+                             </select>
+                       </div>
+                       <!--end select-->
+                       <!--select multiple-->
+                       <div class="form-group">
+                             <label for="selects">Select(multiple options)Courses</label>
+                             <select multiple class="form-control" name="" id="selects" >
+                                <option value="">HTML</option>
+                                <option value="">CSS</option>
+                                <option value="">BOOTSTRAP</option>
+                                <option value="">JAVASCRIPT</option>
+                                <option value="">PYTHON</option>
+                                <option value="">JQUERY</option>
+                                <option value="">PHP</option>
+                                <option value="">SQL</option>
+                             </select>
+                       </div>
+                       <!--end select multiple-->
+
+                       <!--range-->
+                       <div class="form-group">
+                             <label for="ranges">Select Ranges</label>
+                             <input type="range" class="form-control-range" id="ranges">
+                       </div>
+                       <!--end range-->
+                       <!--file-->
+                       <div class="form-group">
+                             <label for="files">Select a file to an upload</label>
+                             <input type="file" class="form-file" id="files">
+                       </div>
+                       <!--end file-->
+
+                       <!--radiobox-->
+                       <div class=" form-group">
+                             <label for="checkingGender">Gender</label>
+                                     <!--male-->
+                                    <div class="form-check form-check-inline ml-3">
+                                         <input type="radio" id="checkingMale" class="form-check-input">
+                                         <label for="checkingMale" class="form-check-label">Male</label>
+                                    </div>
+                                     <!--female-->
+                                    <div class="form-check form-check-inline">     
+                                         <input type="radio" id="checkingFemale" class="form-check-input">
+                                         <label for="checkingFemale" class="form-check-label">Female</label>
+                                    </div>
+                                    <!--others-->
+                                    <div class="form-check form-check-inline">
+                                         <input type="radio" id="checkingOthers" class="form-check-input">
+                                         <label for="checkingOthers" class="form-check-label">Others</label> 
+                                    </div> 
+                        </div>
+      
+                         <!--end radiobox-->
+
+                         <!--normal checkbox-->
+                         <div class="form-group">
+                              <div class="form-check">
+                                   <input type="checkbox" id="checkingBox" class="form-check-input">
+                                    <label for="checkingBox" class="form-check-label">I agree to terms and conditions.</label>
+                              </div>
+                         </div>
+                         <!--end normal checkbox-->
+
+                         <!--submit-->
+                         <div class="form-group">
+                              <button type="submit" class="btn btn-primary form-control">Submit</button>
+                         </div>
+                         <!--end submit-->
+                         </form>
+                    </div>
+                  </div>
+            </div>
+            <!--second column-->
+            <div class="col-md-6">
+               <div class="card">
+                    <div class="card-body">
+                         <h6 class="text-center text-success">Custom forms</h6>
+                         <form action="" method="POST">
+                              <!--custom checkbox[checkbox],custom radio[radio],custom select menu[options],custom switch,file,range[]-->
+
+                              <!--custom checkbox-->
+                              <div class="form-group">
+                              <div class="custom-control custom-checkbox">
+                                   <input type="checkbox" class="custom-control-input" id="checkCus">
+                                   <label for="checkCus" class="custom-control-label" >I agree to terms and conditions.</label>
+                              </div>
+                              </div>
+                              <!--end custom checkbox-->
+
+                              <!--custom radio in multiple line-->
+                              <div class="form-group">
+                                   <label for="radioGender">Gender</label>
+                                   <!--male-->
+                                   <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" id="radioCus">
+                                        <label for="radioCus" class="custom-control-label" >Male</label>
+                                   </div>
+                                   <!--Female-->
+                                   <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" id="radioCus">
+                                        <label for="radioCus" class="custom-control-label" >Female</label>
+                                   </div>
+                                   <!--others-->
+                                   <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" id="radioCus">
+                                        <label for="radioCus" class="custom-control-label" >Others</label>
+                                   </div>
+                              </div>
+                              <!--end custom radio in multiple line-->
+
+                              <!--custom radio in inline-->
+                              <div class="form-group">
+                                   <label for="radiosGender">Gender</label>
+                                   <!--male-->
+                                   <div class="custom-control custom-radio custom-control-inline ml-3">
+                                        <input type="radio" class="custom-control-input" id="radiosCus">
+                                        <label for="radiosCus" class="custom-control-label" >Male</label>
+                                   </div>
+                                   <!--Female-->
+                                   <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" class="custom-control-input" id="radiosCus">
+                                        <label for="radiosCus" class="custom-control-label" >Female</label>
+                                   </div>
+                                   <!--others-->
+                                   <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" class="custom-control-input" id="radiosCus">
+                                        <label for="radiosCus" class="custom-control-label" >Others</label>
+                                   </div>
+                              </div>
+                              <!--end custom radio in inline-->
+
+                              <!--custom radio and checkbox in inline-->
+                              <!--custom radio-->
+                              <div class="row">
+                                   <div class="form-group custom-control-inline">
+                                        <div class="col-sm-6">
+                                           <div class="custom-control custom-radio ">
+                                              <input type="radio" id="cusRad" class="custom-control-input" disabled>
+                                              <label for="cusRad" class="custom-control-label small">I agree to terms and conditions.</label>
+                                           </div>
+                                        </div>
+                                        <!--custom checkbox-->
+                                        <div class="col-sm-6">
+                                            <div class="custom-control custom-checkbox ">
+                                               <input type="checkbox" id="cusCheck" class="custom-control-input">
+                                                <label for="cusCheck" class="custom-control-label small">I agree to terms and conditions.</label>
+                                             </div>
+                                        </div>
+                                    </div>
+                                   </div>
+                              </div>
+                              <!-- end custom radio and checkbox in inline-->
+
+                              <!--custom radio and checkbox in multiple line-->
+                              <div class="form-group">
+                                   <!--custom radio-->
+                                   <div class="custom-control custom-radio mx-4">
+                                        <input type="radio" id="radioCustSing" class="custom-control-input">
+                                        <label for="radioCustSing" class="custom-control-label small">I agree to terms and conditions.</label>
+                                   </div>
+                                   <!--custom checkbox-->
+                                   <div class="custom-control custom-checkbox mx-4">
+                                        <input type="checkbox" id="checkCustSing" class="custom-control-input" disabled>
+                                        <label for="checkCustSing" class="custom-control-label small">I agree to terms and conditions.</label>
+                                   </div>
+                              </div>
+                              <!--end custom radio and checkbox in multiple line-->
+
+                              <!--custom range-->
+                              <div class="form-group mx-4">
+                                   <label for="rangingSs">Select Custom Range</label>
+                                        <input type="range" id="rangingSs" class="custom-range">
+                              </div>
+                              <!--end custom range-->
+
+                              <!--custom range with min,max,steps-->
+                              <div class="form-group mx-4">
+                                   <label for="rangingSs">Select Custom Range</label>
+                                        <input type="range" id="rangingSs" class="custom-range" min="0" max="5" step="1">
+                              </div>
+                              <!--end custom range with min,max,steps-->
+
+                              <!--custom switch-->
+                              <div class="form-group mx-4">
+                                   <div class="custom-control custom-switch">
+                                        <input type="checkbox" id="switchB" class="custom-control-input">
+                                        <label for="switchB" class="custom-control-label">Toggle this switch element</label>
+                                   </div>
+                                   <div class="custom-control custom-switch">
+                                        <input type="checkbox" id="switchD" class="custom-control-input" disabled>
+                                        <label for="switchD" class="custom-control-label">Disable this switch element</label>
+                                   </div>
+                              </div>
+                              <!--end custom switch-->
+
+                              <!--custom select menu's-->
+                              <div class="form-group mx-4">
+                                   <select name="" id="selectM" class="custom-select">
+                                        <option value="" selected>Choose...</option>
+                                        <option value="">HTML</option>
+                                        <option value="">CSS</option>
+                                        <option value="">BOOTSTRAP</option>
+                                        <option value="">JAVASCRIPT</option>
+                                   </select>
+                              </div>
+                                   <!--custom select multiple oytions scrolling-->
+                                   <div class="form-group mx-4">
+                                        <select name="" id="selectM" class="custom-select" multiple>
+                                             <option value="" selected>Choose...</option>
+                                             <option value="">HTML</option>
+                                             <option value="">CSS</option>
+                                             <option value="">BOOTSTRAP</option>
+                                             <option value="">JAVASCRIPT</option>
+                                             <option value="">Python</option>
+                                             <option value="">Java</option>
+                                             <option value="">jquery</option>
+                                        </select>
+                                   </div>
+                                   <!--custom select menu's with size-->
+                                   <div class="form-group mx-4">
+                                        <select name="" id="selectM" class="custom-select custom-select-lg mb-3" >
+                                             <option value="" selected>Choose...(lg)</option>
+                                             <option value="">HTML</option>
+                                             <option value="">CSS</option>
+                                             <option value="">BOOTSTRAP</option>
+                                             <option value="">JAVASCRIPT</option>
+                                        </select>
+                                        <select name="" id="selectM" class="custom-select custom-select-sm mb-3">
+                                             <option value="" selected>Choose...(sm)</option>
+                                             <option value="">HTML</option>
+                                             <option value="">CSS</option>
+                                             <option value="">BOOTSTRAP</option>
+                                             <option value="">JAVASCRIPT</option>
+                                        </select>
+                                   </div>
+                                   <!--custom select menu's  by using class  name size-  how many options should be displayed-->
+                                   <div class="form-group mx-4">
+                                        <select name="" id="selectM" class="custom-select" size="5" multiple>
+                                             <option value="" selected>Choose...</option>
+                                             <option value="">HTML</option>
+                                             <option value="">CSS</option>
+                                             <option value="">BOOTSTRAP</option>
+                                             <option value="">JAVASCRIPT</option>
+                                             <option value="">Python</option>
+                                             <option value="">Java</option>
+                                             <option value="">jquery</option>
+                                        </select>
+                                   </div>
+                              <!--end custom select menu's-->
+
+                              <!--custom-file browser-->
+                              <div class="form-group mx-4">
+                                 <div class="custom-file">
+                                   <input type="file" id="fileS" class="custom-file-input">
+                                   <label for="fileS" class="custom-file-label">Choose File</label>
+                                 </div>
+                              </div>
+                                      <!--custom file browser with lang-->
+                              <div class="form-group mx-4">
+                                   <div class="custom-file">
+                                     <input type="file" id="fileSs" class="custom-file-input" lang="es">
+                                     <label for="fileSs" class="custom-file-label">Seleccionar Archivo</label>
+                                   </div>
+                                </div>
+                                        <!--custom file browser with translates string with html-->
+                                <div class="form-group mx-4">
+                                   <div class="custom-file">
+                                     <input type="file" id="fileSss" class="custom-file-input">
+                                     <label for="fileSss" class="custom-file-label" data-browse="welcome to here">Choose File</label>
+                                   </div>
+                                </div>
+                              <!--end custom-file browser-->
+
+
+                         </form>
+                    </div>
+               </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  </body>
+
+</html>

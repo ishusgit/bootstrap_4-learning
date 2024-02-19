@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-layout</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body>
+ <!-- <div class="container xyz text-center">
+    <div class="row">
+        <div class="col-3 bg ">
+            logo
+        </div>
+        <div class="col-6 bg">
+            <ul>
+                <li style="display:inline-block;padding-right:15px;">Home-1</li>
+                <li style="display:inline-block;padding-right:15px;">Home-2</li>
+                <li style="display:inline-block;padding-right:15px;">Home-3</li>
+                
+            </ul>
+        </div>
+        <div class="col-3 bg">
+           login
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm col-md-4 bg">
+           left side bar
+        </div>
+        <div class="col-sm col-lg-8 bg">
+           Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+           Accusamus soluta, nemo rem recusandae eligendi sapiente veritatis vel,
+            corrupti maxime tempora, porro perspiciatis officia error quaerat?
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 bg">Footer</div>
+    </div>
+  </div>-->
+    <div class="container .xyz">
+        <div class="row">
+            <div class="col-sm bg">
+                first column
+            </div>
+            <div class="col-sm bg">
+                second column
+            </div>
+            <div class="col-sm bg">
+                third column
+            </div>
+        </div>
+        <div class="row no-gutters"><!--gutters width(horizontal only):margin(30px) space from row,padding(15px) space from column.
+        no-gutters:remove margin space from row and padding space from column. Don't consider or rmove the vertical space or height-->
+            <div class="col-sm bg">
+                first column
+            </div>
+            <div class="col-sm bg"><!--col-sm:apply only to sm and above the sm.(md.lg.xl) not for xs(extra small)-->
+                second column
+            </div>
+            <div class="col-sm bg">
+                third column
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4 bg"><!--col and col-sm both are same-->
+                first column
+            </div>
+            <div class="col-sm-4 bg"><!--col-sm-4: for sm,md,lg,xl it will take the the given column size for each column.and for
+            extra small(xs) it will take the full width.-->
+                second column
+            </div>
+            <div class="col-sm-4 bg">
+                third column
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4 bg">
+                col-1
+            </div>
+            <div class="col-sm-4 bg">
+                col-1
+            </div>
+            <div class="w-100"></div>   <!--where you want the columns to break a new line-->
+            <div class="col-sm-4 bg">
+                col-1
+            </div>
+            <div class="col-sm-4 bg">
+                col-1
+            </div>
+            <div class="col-sm-4 bg">
+                col-1
+            </div>
+        </div>
+         
+        <div class="row">
+            <div class="col-lg-2 bg">
+                col-1
+            </div>
+            <div class="col-md-auto bg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A, rerum.
+            </div>
+            <div class="col-lg-2 bg">
+                col-3
+            </div>
+        </div>
+       <hr>
+       <br>
+        <div class="row">
+            <div class="col-sm-8 bg">
+                 col-1
+            </div>
+            <div class="col-sm-4 bg">
+               col-2
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm bg">
+                col-1
+            </div>
+            <div class="col-sm bg">
+                col-1
+            </div>
+        </div>
+        <hr>
+        <br>
+        <div class="row no-gutters">
+            <div class="col-md-6 bg">
+                col-1
+            </div>
+            <div class="col-sm-4 col-lg-6 bg">
+                col-2
+            </div>
+        </div>
+        <hr><br>
+        <div class="row">
+            <div class="col-6 bg  col-md-4 bg">col-1</div>
+            <div class="col-6 bg  col-md-4 bg">col-2 </div>
+            <div class="col-6 bg  col-md-4 bg">col-3 </div>
+          </div>
+        </div>
+<hr>
+<br><br>
+<div class="container px-lg-5">
+    <div class="row mx-lg-n50">
+      <div class="col py-3 px-lg-5 border bg-light">Custom column padding</div>
+      <div class="col py-3 px-lg-5 border bg-light">Custom column padding</div>
+    </div>
+  </div>
+<br>
+<br>
+<br>
+<hr>
+  <div class="container px-lg-5">
+    <div class="row mx-lg-n5">
+      <div class="col py-3 px-lg-5 border bg-light">Custom column padding</div>
+      <div class="col py-3 px-lg-5 border bg-light">Custom column padding</div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  </body>
+</html>
